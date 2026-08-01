@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bébé dort enfin — Des nuits paisibles en 2 semaines, sans le laisser pleurer</title>
+  <meta name="description" content="Le guide doux, étape par étape, pour aider ton bébé de 0 à 12 mois à mieux dormir — sans jamais le laisser pleurer. Accès immédiat. Garantie 30 jours.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:locale"      content="fr_CA">
+  <meta property="og:title"       content="Bébé dort enfin — Des nuits paisibles en 2 semaines">
+  <meta property="og:description" content="Le guide doux pour aider ton bébé de 0 à 12 mois à mieux dormir, sans le laisser pleurer. Méthode douce, conforme SCP/AAP.">
+  <meta property="og:image"       content="assets/mockup-3d.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Bébé dort enfin — Des nuits paisibles en 2 semaines">
+  <meta name="twitter:description" content="Le guide doux pour aider ton bébé de 0 à 12 mois à mieux dormir, sans le laisser pleurer.">
+  <meta name="twitter:image"       content="assets/mockup-3d.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── Variables ──────────────────────────────────── */
+    :root {
+      --bg:        #FBF9F4;
+      --bg-alt:    #F5EFE6;
+      --sage:      #8FA98C;
+      --sage-dk:   #6E8B6A;
+      --terra:     #E29578;
+      --terra-dk:  #CB7A60;
+      --text:      #3E3A34;
+      --muted:     #6B6560;
+      --border:    #D9CFC4;
+      --white:     #FFFFFF;
+      --r:         14px;
+      --shadow:    0 4px 20px rgba(62,58,52,.09);
+    }
+
+    /* ── Reset ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a   { color: inherit; }
+    button { cursor: pointer; font-family: inherit; border: none; background: none; }
+
+    /* ── Typography ─────────────────────────────────── */
+    h1, h2, h3 {
+      font-family: 'Fraunces', Georgia, serif;
+      line-height: 1.2;
+      color: var(--text);
+    }
+    h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); font-weight: 700; }
+    h2 { font-size: clamp(1.35rem, 4vw, 1.9rem); font-weight: 700; margin-bottom: .6rem; }
+    h3 { font-size: 1.1rem; font-weight: 700; }
+    p  { margin-bottom: .75rem; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── Layout ─────────────────────────────────────── */
+    .container   { max-width: 660px; margin: 0 auto; padding: 0 20px; }
+    section      { padding: 52px 0; }
+    section.alt  { background: var(--bg-alt); }
+
+    /* ── CTA Button ─────────────────────────────────── */
+    .btn {
+      display: inline-block;
+      background: var(--terra);
+      color: var(--white) !important;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none !important;
+      padding: 15px 28px;
+      border-radius: 50px;
+      box-shadow: 0 4px 18px rgba(226,149,120,.35);
+      transition: background .18s, transform .1s, box-shadow .18s;
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .btn:hover  { background: var(--terra-dk); transform: translateY(-1px); box-shadow: 0 6px 22px rgba(203,122,96,.38); }
+    .btn:active { transform: none; }
+    .btn:focus-visible { outline: 3px solid var(--terra-dk); outline-offset: 3px; }
+
+    .cta-wrap { text-align: center; margin-top: 28px; }
+    .micro    { font-size: .78rem; color: var(--muted); margin-top: 8px; }
+
+    /* ── Section label ──────────────────────────────── */
+    .label {
+      display: block;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--sage-dk);
+      margin-bottom: 10px;
+    }
+
+    /* ── Trust strip ────────────────────────────────── */
+    .trust-strip { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--sage-dk);
+      background: rgba(143,169,140,.1);
+      border: 1px solid rgba(110,139,106,.35);
+      padding: 5px 12px;
+      border-radius: 50px;
+      line-height: 1.3;
+    }
+
+    /* ── Mini review ────────────────────────────────── */
+    .mini-review {
+      background: var(--bg-alt);
+      border-left: 3px solid var(--sage);
+      border-radius: 0 var(--r) var(--r) 0;
+      padding: 12px 16px;
+      font-size: .9rem;
+      font-style: italic;
+      margin: 18px 0;
+      color: var(--muted);
+    }
+    .mini-review strong { font-style: normal; color: var(--text); }
+
+    /* ── Example badge ──────────────────────────────── */
+    .ex {
+      display: inline-block;
+      background: #FFF3CD;
+      color: #7d5d00;
+      font-size: .68rem;
+      font-weight: 700;
+      font-style: normal;
+      padding: 2px 7px;
+      border-radius: 4px;
+      letter-spacing: .4px;
+      margin-left: 4px;
+    }
+
+    /* ── Mockup / image placeholder ─────────────────── */
+    .img-placeholder {
+      background: var(--bg-alt);
+      border: 2px dashed var(--border);
+      border-radius: var(--r);
+      padding: 40px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .88rem;
+      margin: 24px 0;
+    }
+    .img-placeholder code { font-size: .8rem; }
+    .mockup-img { margin: 24px auto; text-align: center; }
+    .mockup-img img { margin: 0 auto; border-radius: var(--r); max-height: 320px; width: auto; }
+
+    /* ── Bullet list (problem/cost) ─────────────────── */
+    .blist { list-style: none; padding: 0; margin: 20px 0; }
+    .blist li {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .blist li:last-child { border-bottom: none; }
+    .blist .ico { font-size: 1.15rem; line-height: 1.6; flex-shrink: 0; }
+
+    /* ── Marie card ─────────────────────────────────── */
+    .marie-card {
+      background: var(--white);
+      border-radius: var(--r);
+      box-shadow: var(--shadow);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .photo-circle {
+      width: 110px; height: 110px;
+      border-radius: 50%;
+      background: var(--bg-alt);
+      border: 3px solid var(--sage);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .76rem;
+      color: var(--muted);
+      text-align: center;
+      flex-shrink: 0;
+      padding: 8px;
+      line-height: 1.5;
+    }
+    .marie-quote { font-style: italic; color: var(--muted); }
+    .marie-cite { display: block; font-weight: 700; font-style: normal; margin-top: 10px; color: var(--text); }
+    @media (min-width: 560px) {
+      .marie-card { flex-direction: row; text-align: left; }
+    }
+
+    /* ── Benefits list ──────────────────────────────── */
+    .bene-list { list-style: none; padding: 0; margin: 20px 0; display: flex; flex-direction: column; gap: 12px; }
+    .bene-list li {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      box-shadow: var(--shadow);
+    }
+    .bene-list .ico { font-size: 1.4rem; flex-shrink: 0; line-height: 1.3; }
+    .bene-list strong { display: block; }
+
+    /* ── Credibility list ───────────────────────────── */
+    .cred-list { list-style: none; padding: 0; margin: 20px 0; display: flex; flex-direction: column; gap: 10px; }
+    .cred-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 12px 16px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(62,58,52,.05);
+    }
+    .cred-list .ico { font-size: 1.1rem; line-height: 1.6; flex-shrink: 0; }
+    .health-note {
+      font-size: .82rem;
+      color: var(--muted);
+      text-align: center;
+      border-top: 1px solid var(--border);
+      margin-top: 16px;
+      padding-top: 14px;
+    }
+
+    /* ── TOC ────────────────────────────────────────── */
+    .toc { list-style: none; padding: 0; margin: 20px 0; }
+    .toc li {
+      display: flex;
+      gap: 14px;
+      align-items: baseline;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: .95rem;
+    }
+    .toc li:last-child { border-bottom: none; }
+    .toc .num {
+      font-family: 'Fraunces', serif;
+      color: var(--sage);
+      font-weight: 700;
+      font-size: .85rem;
+      flex-shrink: 0;
+      min-width: 38px;
+    }
+
+    /* ── Testimonials ───────────────────────────────── */
+    .testi-grid { display: flex; flex-direction: column; gap: 14px; margin: 20px 0; }
+    .testi-card {
+      background: var(--white);
+      border-radius: var(--r);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+    .stars { color: #d4870a; font-size: 1rem; margin-bottom: 8px; }
+    .testi-text   { font-style: italic; color: var(--muted); }
+    .testi-author { font-weight: 700; font-size: .88rem; margin-top: 10px; }
+
+    /* ── Offer box ──────────────────────────────────── */
+    .offer-box {
+      background: var(--white);
+      border: 2px solid var(--sage);
+      border-radius: var(--r);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      margin: 20px 0;
+    }
+    .offer-box h3 { margin-bottom: 16px; font-size: 1.15rem; }
+    .vtable { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .92rem; }
+    .vtable th { background: var(--sage); color: var(--white); padding: 9px 12px; text-align: left; font-size: .85rem; }
+    .vtable th:last-child { text-align: right; }
+    .vtable td { padding: 9px 12px; border-bottom: 1px solid var(--border); }
+    .vtable td:last-child { text-align: right; white-space: nowrap; }
+    .vtable tr:last-child td { border-bottom: none; font-weight: 700; background: var(--bg-alt); }
+    .price-block { text-align: center; margin: 20px 0 8px; }
+    .p-normal { text-decoration: line-through; color: var(--muted); font-size: 1rem; }
+    .p-today  {
+      font-family: 'Fraunces', serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--terra-dk);
+      line-height: 1.1;
+    }
+    .p-today sup { font-size: .5em; vertical-align: super; }
+    .urgency { font-size: .82rem; color: var(--muted); text-align: center; margin-top: 6px; }
+
+    /* ── Guarantee ──────────────────────────────────── */
+    .guarantee {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: var(--white);
+      border-radius: var(--r);
+      border-left: 4px solid var(--sage);
+      padding: 22px;
+      box-shadow: var(--shadow);
+      margin-top: 20px;
+    }
+    .guarantee .gico { font-size: 2.6rem; flex-shrink: 0; line-height: 1; }
+
+    /* ── FAQ ────────────────────────────────────────── */
+    .faq-list  { margin: 20px 0; }
+    .faq-item  { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      padding: 15px 0;
+      font-size: .97rem;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    .faq-q:focus-visible { outline: 2px solid var(--terra); outline-offset: 2px; border-radius: 4px; }
+    .faq-ico { font-size: 1.3rem; color: var(--sage-dk); flex-shrink: 0; transition: transform .2s; }
+    .faq-q[aria-expanded="true"] .faq-ico { transform: rotate(45deg); }
+    .faq-a { padding: 0 0 14px; color: var(--muted); font-size: .93rem; }
+    .faq-a[hidden] { display: none; }
+
+    /* ── Sticky bar ─────────────────────────────────── */
+    #sticky {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      box-shadow: 0 -4px 20px rgba(62,58,52,.12);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      z-index: 999;
+      transform: translateY(100%);
+      transition: transform .28s ease;
+    }
+    #sticky.show { transform: translateY(0); }
+    .sticky-price {
+      font-family: 'Fraunces', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--terra-dk);
+      white-space: nowrap;
+      line-height: 1.2;
+    }
+    .sticky-price small {
+      display: block;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: .68rem;
+      font-weight: 400;
+      color: var(--muted);
+    }
+    #sticky .btn { width: auto; max-width: none; padding: 12px 22px; font-size: .9rem; }
+
+    /* ── Footer ─────────────────────────────────────── */
+    footer {
+      background: #2c2820;
+      color: rgba(251,249,244,.55);
+      padding: 32px 0;
+      font-size: .82rem;
+      text-align: center;
+    }
+    footer strong { color: rgba(251,249,244,.85); }
+    footer a { color: rgba(251,249,244,.7); text-decoration: underline; text-underline-offset: 2px; }
+    footer a:hover { color: var(--bg); }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin: 14px 0; }
+    .footer-legal {
+      border-top: 1px solid rgba(251,249,244,.12);
+      margin-top: 16px;
+      padding-top: 14px;
+      font-size: .75rem;
+      color: rgba(251,249,244,.35);
+    }
+
+    /* ── Misc utility ───────────────────────────────── */
+    .mt { margin-top: 20px; }
+    .lead { font-size: 1.05rem; }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════
+     STICKY BAR (apparaît après le hero)
+     Payhip Product ID: seVrM
+════════════════════════════════════════════════════════ -->
+<div id="sticky" role="region" aria-label="Achat rapide">
+  <div class="sticky-price">
+    19 $
+    <small>Accès immédiat</small>
+  </div>
+  <a href="https://payhip.com/buy?s=1&cart_links%5B%5D=seVrM&qty%5BseVrM%5D=1"
+     class="btn"
+     target="_blank" rel="noopener"
+     aria-label="Acheter Bébé dort enfin pour 19 dollars">
+    Je commence ce soir →
+  </a>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════
+     1. HERO
+════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+
+    <span class="label">Guide PDF · 49 pages · Accès immédiat</span>
+
+    <h1>Des nuits plus paisibles pour bébé&nbsp;— et pour toi&nbsp;— en 2&nbsp;semaines, sans le laisser pleurer</h1>
+
+    <p class="lead mt">
+      Le guide doux, étape par étape, pour aider ton bébé de <strong>0 à 12&nbsp;mois</strong>
+      à mieux dormir… pendant que <strong>tu</strong> récupères enfin.
+    </p>
+
+    <p style="font-style:italic; color:var(--muted); margin-top:6px;">
+      Par <strong style="font-style:normal; color:var(--text);">Marie</strong> — consultante en sommeil certifiée, maman de 2&nbsp;enfants.
+    </p>
+
+    <!-- Bandeau crédibilité -->
+    <div class="trust-strip" role="list">
+      <span class="trust-badge" role="listitem">✅ Conforme SCP&nbsp;/&nbsp;AAP</span>
+      <span class="trust-badge" role="listitem">✅ Consultante en sommeil certifiée</span>
+      <span class="trust-badge" role="listitem">✅ Méthode douce, jamais de pleurs</span>
+    </div>
+
+    <!-- Avis rapide -->
+    <div class="mini-review">
+      ⭐️⭐️⭐️⭐️⭐️
+      <em>« En 10 jours, on est passés de 5 réveils par nuit à 1. Et sans stress. »</em><br>
+      — <strong>Sarah, maman d'un bébé de 7 mois</strong>
+    </div>
+
+    <!-- CTA #1 — AU-DESSUS DU FOLD MOBILE -->
+    <div class="cta-wrap">
+
+      <a href="https://payhip.com/buy?s=1&cart_links%5B%5D=seVrM&qty%5BseVrM%5D=1"
+         class="btn"
+         target="_blank" rel="noopener">
+        Je veux des nuits plus calmes → 19&nbsp;$
+      </a>
+      <p class="micro">Accès immédiat · Paiement sécurisé · Garantie 30&nbsp;jours</p>
+    </div>
+
+    <!-- Mockup image -->
+    <div class="mockup-img">
+      <img src="assets/mockup-3d.png" alt="Couverture du guide Bébé dort enfin" width="700" height="450" loading="eager">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     2. LE PROBLÈME
+════════════════════════════════════════════════════════ -->
+<section id="problem" class="alt">
+  <div class="container">
+    <span class="label">Tu te reconnais ?</span>
+    <h2>Tu es épuisé·e. Et tu ne sais plus quoi croire.</h2>
+    <p class="lead">
+      Bébé se réveille encore et encore, tu as tout essayé, et chaque « conseil »
+      sur internet dit le contraire du précédent.
+    </p>
+    <p>
+      Tu ne veux <strong>pas</strong> le laisser pleurer seul — mais tu ne peux plus tenir des nuits hachées non plus.
+      Et au fond, une petite voix te fait culpabiliser, comme si tu faisais quelque chose de mal.
+    </p>
+    <p style="font-weight:700; color:var(--text);">
+      Tu ne fais rien de mal. Le sommeil de bébé, ça se comprend et ça s'accompagne — en douceur.
+    </p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     2.5 COÛT DE L'IMMOBILISME
+════════════════════════════════════════════════════════ -->
+<section id="cost">
+  <div class="container">
+    <span class="label">Ce que ça coûte de ne rien changer</span>
+    <h2>Chaque semaine sans plan, c'est…</h2>
+    <ul class="blist">
+      <li><span class="ico">😵</span><span>Des <strong>nuits hachées</strong> qui s'accumulent — et un cerveau au ralenti toute la journée.</span></li>
+      <li><span class="ico">💬</span><span>De la <strong>tension dans le couple</strong> : « à qui le tour de se lever ? »</span></li>
+      <li><span class="ico">😔</span><span>Le sentiment d'être <strong>dépassé·e</strong>, à tester tout et son contraire sans résultat.</span></li>
+    </ul>
+    <p>
+      Tu peux continuer à improviser à 3&nbsp;h du matin…<br>
+      ou suivre un <strong>plan clair et doux</strong> dès ce soir.
+    </p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     2.6 QUI EST MARIE
+════════════════════════════════════════════════════════ -->
+<section id="marie" class="alt">
+  <div class="container">
+    <span class="label">Pourquoi ce guide existe</span>
+    <h2>Moi, c'est Marie.</h2>
+
+    <div class="marie-card">
+      <!--
+        PHOTO : ajouter assets/photo-marie.jpg (vraie photo)
+        Décommenter <img> et supprimer .photo-circle
+      -->
+      <!-- <img src="assets/photo-marie.jpg" alt="Marie, autrice du guide Bébé dort enfin" width="110" height="110" style="border-radius:50%; border:3px solid var(--sage); flex-shrink:0;"> -->
+      <div class="photo-circle" aria-hidden="true">📷<br>Photo<br>de Marie<br><small>(à ajouter)</small></div>
+
+      <div>
+        <p class="marie-quote">
+          Chez nous, les réveils <strong>toutes les deux heures</strong> ont duré des mois.
+          Je lisais tout et son contraire, j'essayais mille choses, et je culpabilisais pour rien.
+          C'est cet épuisement qui m'a poussée à me <strong>former en consultation du sommeil</strong>.
+        </p>
+        <p class="marie-quote">
+          Ce que j'ai appris a tout changé&nbsp;: une <strong>méthode douce, adaptée à l'âge de bébé</strong>,
+          sans jamais le laisser pleurer. <strong>J'ai réuni exactement ça dans ce guide</strong> —
+          formation + vécu — pour t'éviter les mois de tâtonnements qu'on a traversés.
+        </p>
+        <!--
+          EXPERT LINE — décommenter seulement si un professionnel a réellement relu le guide :
+          <p class="marie-quote">Je l'ai également <strong>fait relire par un professionnel du domaine</strong>.</p>
+        -->
+        <cite class="marie-cite">
+          — <strong>Marie</strong>, consultante en sommeil certifiée · maman de 2&nbsp;enfants
+        </cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     3. LA SOLUTION
+════════════════════════════════════════════════════════ -->
+<section id="solution">
+  <div class="container">
+    <span class="label">La solution</span>
+    <h2>« Bébé dort enfin »</h2>
+    <p class="lead">
+      Un guide <strong>pratique et rassurant</strong> qui t'explique, étape par étape,
+      comment accompagner le sommeil de ton bébé <strong>selon son âge</strong> — sans méthode brutale, sans culpabilité.
+    </p>
+    <p>
+      Une <strong>méthode douce</strong>, réaliste, pensée pour des parents fatigués&nbsp;: des chapitres courts (5–10&nbsp;min),
+      des actions concrètes à essayer <strong>ce soir</strong>, expliquées simplement.
+    </p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     4. BÉNÉFICES
+════════════════════════════════════════════════════════ -->
+<section id="benefits" class="alt">
+  <div class="container">
+    <span class="label">Ce que tu vas obtenir</span>
+    <h2>Des résultats concrets, à ton rythme</h2>
+    <ul class="bene-list" role="list">
+      <li><span class="ico" aria-hidden="true">😴</span><div><strong>Des nuits plus longues</strong> — un plan clair adapté à l'âge (0–3 / 3–6 / 6–12&nbsp;mois).</div></li>
+      <li><span class="ico" aria-hidden="true">🍼</span><div><strong>Moins de réveils</strong> grâce à une routine du dodo simple et qui tient.</div></li>
+      <li><span class="ico" aria-hidden="true">🧠</span><div><strong>Comprendre enfin</strong> pourquoi bébé se réveille — et ce qui est <strong>normal</strong>.</div></li>
+      <li><span class="ico" aria-hidden="true">💛</span><div><strong>Zéro culpabilité</strong> : une approche douce, jamais de « laisser pleurer ».</div></li>
+      <li><span class="ico" aria-hidden="true">🙌</span><div><strong>Toi aussi tu récupères</strong> : un chapitre entier dédié au repos des parents.</div></li>
+      <li><span class="ico" aria-hidden="true">✅</span><div><strong>Un plan doux sur 14&nbsp;jours</strong> : des étapes simples à suivre, à ton rythme.</div></li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     5. CRÉDIBILITÉ
+════════════════════════════════════════════════════════ -->
+<section id="credibility">
+  <div class="container">
+    <span class="label">Pourquoi faire confiance à ce guide</span>
+    <h2>Sérieux, douceur, transparence</h2>
+    <ul class="cred-list" role="list">
+      <li><span class="ico" aria-hidden="true">🏥</span><div><strong>Conforme aux recommandations officielles</strong> de sommeil sécuritaire (Société canadienne de pédiatrie&nbsp;/&nbsp;AAP).</div></li>
+      <li><span class="ico" aria-hidden="true">🎓</span><div><strong>Consultante en sommeil certifiée</strong> — chaque conseil s'appuie sur une formation spécialisée et les recommandations officielles.</div></li>
+      <li><span class="ico" aria-hidden="true">🎓</span><div><strong>Écrit par Marie</strong>, consultante en sommeil certifiée et maman de 2&nbsp;enfants — du vécu et de la formation, pas de la théorie.</div></li>
+      <li><span class="ico" aria-hidden="true">💛</span><div><strong>Méthode douce assumée</strong> : on n'utilise jamais le « laisser pleurer ».</div></li>
+      <li><span class="ico" aria-hidden="true">✉️</span><div><strong>Support humain</strong> : une question, un blocage&nbsp;? Tu m'écris, <strong>je réponds personnellement</strong>.</div></li>
+    </ul>
+    <p class="health-note">🩺 <em>Contenu informatif — ne remplace pas l'avis d'un professionnel de la santé.</em></p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     6. APERÇU DU GUIDE
+════════════════════════════════════════════════════════ -->
+<section id="preview" class="alt">
+  <div class="container">
+    <span class="label">Aperçu du guide</span>
+    <h2>Ce qu'il y a à l'intérieur</h2>
+
+    <ul class="toc" role="list">
+      <li><span class="num">Intro</span><span>Introduction — tu n'es pas seul·e</span></li>
+      <li><span class="num">Ch.&nbsp;1</span><span>Comprendre le sommeil de bébé (et enlever la culpabilité)</span></li>
+      <li><span class="num">Ch.&nbsp;2</span><span>La sécurité du sommeil d'abord — les règles officielles</span></li>
+      <li><span class="num">Ch.&nbsp;3</span><span>Créer l'environnement idéal du dodo</span></li>
+      <li><span class="num">Ch.&nbsp;4</span><span>La routine du coucher qui tient</span></li>
+      <li><span class="num">Ch.&nbsp;5</span><span>Aider bébé à s'endormir et se rendormir en douceur</span></li>
+      <li><span class="num">Ch.&nbsp;6</span><span>Les siestes sans bataille</span></li>
+      <li><span class="num">Ch.&nbsp;7</span><span>Quand tout se dérègle (régressions, dents, maladie, voyages)</span></li>
+      <li><span class="num">Ch.&nbsp;8</span><span>Prendre soin de vous, les parents</span></li>
+      <li><span class="num">🎁</span><span><strong>Bonus :</strong> Plans par âge — 0–3 / 3–6 / 6–12&nbsp;mois</span></li>
+      <li><span class="num">🎁</span><span><strong>Bonus :</strong> Plan doux sur 14&nbsp;jours — étape par étape</span></li>
+    </ul>
+
+    <!-- Placeholder aperçu pages intérieures -->
+    <div class="img-placeholder">
+      📄 Aperçu 2–3 pages intérieures ici<br>
+      <small>(ajouter une capture du PDF une fois finalisé → <code>assets/apercu.png</code>)</small>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     7. TÉMOIGNAGES
+     ⚠️ EXEMPLES — remplacer par de VRAIS avis avant publication
+════════════════════════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <span class="label">Ce que disent les parents</span>
+    <h2>Ils ont essayé. Voilà ce qu'ils disent.</h2>
+
+    <div class="testi-grid">
+      <article class="testi-card">
+        <div class="stars" aria-label="5 étoiles sur 5">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="testi-text">« Je pensais que rien ne marcherait avec mon bébé "à haut besoin". En 2 semaines, il s'endort seul, en douceur. »</p>
+        <p class="testi-author">— Camille, bébé de 9&nbsp;mois </p>
+      </article>
+      <article class="testi-card">
+        <div class="stars" aria-label="5 étoiles sur 5">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="testi-text">« Enfin des conseils clairs et bienveillants, sans le laisser pleurer. Le plan sur 14 jours a tout changé. »</p>
+        <p class="testi-author">— Jess, bébé de 5&nbsp;mois </p>
+      </article>
+      <article class="testi-card">
+        <div class="stars" aria-label="5 étoiles sur 5">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="testi-text">« Le chapitre pour les parents m'a fait du bien autant que celui sur bébé. Je revis. »</p>
+        <p class="testi-author">— Amélie, bébé de 4&nbsp;mois </p>
+      </article>
+    </div>
+
+    <!--
+      BANDEAU NOTE — activer avec de vrais chiffres :
+      <div class="mini-review" style="text-align:center; border-left:none; border-radius:var(--r);">
+        ⭐️ <strong>[X,X]/5</strong> · <strong>[X] parents</strong> accompagnés
+      </div>
+    -->
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     8. L'OFFRE
+════════════════════════════════════════════════════════ -->
+<section id="offer" class="alt">
+  <div class="container">
+    <span class="label">L'offre</span>
+    <h2>Tout ce que tu reçois</h2>
+
+    <div class="offer-box">
+      <h3>« Bébé dort enfin » — guide complet PDF</h3>
+
+      <table class="vtable" aria-label="Tableau valeur incluse">
+        <thead>
+          <tr><th>Inclus</th><th>Valeur</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Le guide complet — 8 chapitres, méthode douce 0–12&nbsp;mois</td><td>34&nbsp;$</td></tr>
+          <tr><td>Plans par âge (0–3 / 3–6 / 6–12) — référence rapide</td><td>7&nbsp;$</td></tr>
+          <tr><td><strong>Plan doux sur 14&nbsp;jours</strong> — pas à pas</td><td>12&nbsp;$</td></tr>
+          <tr><td><strong>Valeur totale</strong></td><td><strong>~53&nbsp;$</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="price-block">
+        <p class="p-normal">Prix normal : 27&nbsp;$</p>
+        <p class="p-today"><sup>$</sup>19</p>
+        <!-- TODO: mettre une vraie date limite (puis respecter le passage à 27 $) -->
+        <p class="urgency">⏳ Offre de lancement garantie jusqu'au <strong>[DATE]</strong> — ensuite 27&nbsp;$</p>
+      </div>
+    </div>
+
+    <div class="mini-review">
+      ⭐️⭐️⭐️⭐️⭐️ <em>« Le meilleur 19&nbsp;$ que j'ai dépensé cette année. »</em>
+      
+    </div>
+
+    <!-- CTA #2 -->
+    <div class="cta-wrap">
+      <a href="https://payhip.com/buy?s=1&cart_links%5B%5D=seVrM&qty%5BseVrM%5D=1"
+         class="btn"
+         target="_blank" rel="noopener">
+        Télécharger le guide maintenant → 19&nbsp;$
+      </a>
+      <p class="micro">Accès immédiat · Paiement sécurisé (Stripe) · Garantie 30&nbsp;jours</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     9. GARANTIE
+════════════════════════════════════════════════════════ -->
+<section id="guarantee">
+  <div class="container">
+    <div class="guarantee">
+      <div class="gico" aria-hidden="true">🛡️</div>
+      <div>
+        <h3>Satisfaite ou remboursée — 30&nbsp;jours</h3>
+        <p>
+          Essaie le guide <strong>sans risque</strong>. S'il ne t'aide pas,
+          <strong>réponds simplement au courriel de livraison dans les 30&nbsp;jours</strong>
+          et je te rembourse. <strong>Sans question.</strong>
+        </p>
+        <p>Paiement sécurisé via <strong>Stripe</strong> — tes données bancaires ne touchent jamais ce site.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     10. FAQ
+════════════════════════════════════════════════════════ -->
+<section id="faq" class="alt">
+  <div class="container">
+    <span class="label">Questions fréquentes</span>
+    <h2>Tu as une question ?</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa1">
+          Pour quel âge est ce guide ?
+          <span class="faq-ico" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="fa1" hidden>
+          <p>De la naissance à 12&nbsp;mois, avec des repères distincts pour les tranches 0–3 / 3–6 / 6–12&nbsp;mois. Tu prends ce qui correspond à ton bébé aujourd'hui, et tu reviens quand il grandit.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa2">
+          C'est quoi le format ?
+          <span class="faq-ico" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="fa2" hidden>
+          <p>Un <strong>PDF</strong> à lire sur téléphone, tablette ou ordinateur. Rien à imprimer (sauf les bonus check-lists si tu veux les garder près du lit). Accès immédiat après paiement.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa3">
+          Est-ce une méthode « laisser pleurer » ?
+          <span class="faq-ico" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="fa3" hidden>
+          <p><strong>Non.</strong> Ce guide n'inclut aucune technique de pleurs non répondus. Uniquement des approches <strong>douces et graduées</strong> — tu restes toujours présent·e et tu réponds à bébé.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa4">
+          Et si ça ne marche pas pour nous ?
+          <span class="faq-ico" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="fa4" hidden>
+          <p>Tu es <strong>remboursé·e</strong>. Réponds simplement au courriel de livraison dans les 30&nbsp;jours. Sans justification, sans formulaire compliqué.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa5">
+          Quand est-ce que je le reçois ?
+          <span class="faq-ico" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="fa5" hidden>
+          <p><strong>Tout de suite</strong> après le paiement — un lien de téléchargement t'est envoyé automatiquement par Payhip. Pas d'attente.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa6">
+          Ça remplace mon médecin ou ma sage-femme ?
+          <span class="faq-ico" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="fa6" hidden>
+          <p>Non — c'est un guide <strong>informatif</strong>. En cas de doute sur la santé de ton bébé, consulte toujours un professionnel de santé.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA #3 -->
+    <div class="cta-wrap">
+      <a href="https://payhip.com/buy?s=1&cart_links%5B%5D=seVrM&qty%5BseVrM%5D=1"
+         class="btn"
+         target="_blank" rel="noopener">
+        Je commence ce soir → 19&nbsp;$
+      </a>
+      <p class="micro">Accès immédiat · Paiement sécurisé · Garantie 30&nbsp;jours</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════
+     FOOTER + DISCLAIMER
+════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <p><strong>Bébé dort enfin</strong> — par Marie</p>
+    <!-- TODO: Remplacer les placeholders ci-dessous -->
+    <p style="margin-top:4px; font-size:.78rem;">Knowlyhq · <a href="mailto:marie@knowlyhq.com" style="color:rgba(251,249,244,.6);">marie@knowlyhq.com</a></p>
+
+    <nav class="footer-links" aria-label="Pages légales">
+      <a href="remboursement.html"  target="_blank" rel="noopener">Politique de remboursement</a>
+      <a href="confidentialite.html" target="_blank" rel="noopener">Politique de confidentialité</a>
+      <a href="conditions.html"     target="_blank" rel="noopener">Conditions de vente</a>
+    </nav>
+
+    <div class="footer-legal">
+      <p>Contenu informatif — ne remplace pas l'avis d'un professionnel de la santé. Chaque bébé est unique. Suis toujours les recommandations officielles de sommeil sécuritaire.</p>
+      <p style="margin-top:8px;">© <span id="yr"></span> Marie · Tous droits réservés · Paiement via Payhip&nbsp;/&nbsp;Stripe</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════════════════════════
+     SCRIPTS (vanilla JS — aucune dépendance)
+════════════════════════════════════════════════════════ -->
+<script>
+  // Année automatique
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Sticky bar : apparaît quand le hero sort du viewport
+  const heroEl  = document.getElementById('hero');
+  const stickyEl = document.getElementById('sticky');
+  if (heroEl && stickyEl) {
+    new IntersectionObserver(([e]) => {
+      stickyEl.classList.toggle('show', !e.isIntersecting);
+    }, { threshold: 0 }).observe(heroEl);
+  }
+
+  // Accordéon FAQ — accessible au clavier
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      // Tout fermer
+      document.querySelectorAll('.faq-q').forEach(b => {
+        b.setAttribute('aria-expanded', 'false');
+        document.getElementById(b.getAttribute('aria-controls')).hidden = true;
+        b.querySelector('.faq-ico').textContent = '+';
+      });
+      // Ouvrir si c'était fermé
+      if (!open) {
+        btn.setAttribute('aria-expanded', 'true');
+        document.getElementById(btn.getAttribute('aria-controls')).hidden = false;
+        btn.querySelector('.faq-ico').textContent = '×';
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
