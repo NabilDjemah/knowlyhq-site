@@ -97,6 +97,9 @@
 
     .cta-wrap { text-align: center; margin-top: 28px; }
     .micro    { font-size: .78rem; color: var(--muted); margin-top: 8px; }
+    .cta-price { display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .cta-price .was { text-decoration: line-through; color: var(--muted); font-size: .88rem; }
+    .cta-price .now { font-family: 'Fraunces', serif; font-size: 1.25rem; font-weight: 700; color: var(--terra-dk); }
 
     /* ── Section label ──────────────────────────────── */
     .label {
@@ -459,11 +462,14 @@
 
     <!-- CTA #1 — AU-DESSUS DU FOLD MOBILE -->
     <div class="cta-wrap">
-
+      <div class="cta-price">
+        <span class="was">Prix normal : 27&nbsp;$</span>
+        <span class="now">Aujourd'hui : 19&nbsp;$</span>
+      </div>
       <a href="https://payhip.com/buy?s=1&cart_links%5B%5D=seVrM&qty%5BseVrM%5D=1"
          class="btn"
          target="_blank" rel="noopener">
-        Je veux des nuits plus calmes → 19&nbsp;$
+        Je veux des nuits plus calmes →
       </a>
       <p class="micro">Accès immédiat · Paiement sécurisé · Garantie 30&nbsp;jours</p>
     </div>
@@ -638,10 +644,9 @@
       <li><span class="num">🎁</span><span><strong>Bonus :</strong> Plan doux sur 14&nbsp;jours — étape par étape</span></li>
     </ul>
 
-    <!-- Placeholder aperçu pages intérieures -->
-    <div class="img-placeholder">
-      📄 Aperçu 2–3 pages intérieures ici<br>
-      <small>(ajouter une capture du PDF une fois finalisé → <code>assets/apercu.png</code>)</small>
+    <!-- Aperçu pages intérieures -->
+    <div class="mockup-img">
+      <img src="assets/apercu.png" alt="Aperçu de 2 pages intérieures du guide Bébé dort enfin" style="max-width:100%; border-radius:8px; box-shadow:0 4px 24px rgba(0,0,0,.12);">
     </div>
   </div>
 </section>
@@ -721,10 +726,14 @@
 
     <!-- CTA #2 -->
     <div class="cta-wrap">
+      <div class="cta-price">
+        <span class="was">Prix normal : 27&nbsp;$</span>
+        <span class="now">Aujourd'hui : 19&nbsp;$</span>
+      </div>
       <a href="https://payhip.com/buy?s=1&cart_links%5B%5D=seVrM&qty%5BseVrM%5D=1"
          class="btn"
          target="_blank" rel="noopener">
-        Télécharger le guide maintenant → 19&nbsp;$
+        Télécharger le guide maintenant →
       </a>
       <p class="micro">Accès immédiat · Paiement sécurisé (Stripe) · Garantie 30&nbsp;jours</p>
     </div>
@@ -827,10 +836,14 @@
 
     <!-- CTA #3 -->
     <div class="cta-wrap">
+      <div class="cta-price">
+        <span class="was">Prix normal : 27&nbsp;$</span>
+        <span class="now">Aujourd'hui : 19&nbsp;$</span>
+      </div>
       <a href="https://payhip.com/buy?s=1&cart_links%5B%5D=seVrM&qty%5BseVrM%5D=1"
          class="btn"
          target="_blank" rel="noopener">
-        Je commence ce soir → 19&nbsp;$
+        Je commence ce soir →
       </a>
       <p class="micro">Accès immédiat · Paiement sécurisé · Garantie 30&nbsp;jours</p>
     </div>
